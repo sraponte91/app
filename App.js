@@ -1,8 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import {ImageBackground, StyleSheet, Text, View} from 'react-native';
+import {ImageBackground, ScrollView, StyleSheet, Text, View} from 'react-native';
 import Logo from './assets/logo_marketloop.svg';
 import Info from './assets/info.svg';
 const headerBg = {uri: './assets/pattern_header.png'};
+import React, {Component} from 'react';
+import Card from './components/views/card';
 
 
 export default function App() {
@@ -17,6 +19,10 @@ export default function App() {
             <Text style={styles.titles}>Snapshot</Text>
             <Info style={styles.infoIcon}></Info>
         </View>
+
+            <Card />
+
+
         <StatusBar style="auto" />
       </View>
 );
